@@ -1,0 +1,13 @@
+@model PacienteViewModel
+@{
+  ViewData["Title"] = "Registro de paciente";
+}
+
+<form asp-action="Save" method="post">
+  <input type="text" asp-for="Nombre">
+  <input type="text" asp-for="Apellidos">
+  <input type="number" asp-for="Edad">
+  <input type="radio" asp-for="Genero" value="Masculino"> Masculino
+  <input type="radio" asp-for="Genero" value="Femenino"> Femenino
+  <button type="submit">Guardar</button>
+</form>
