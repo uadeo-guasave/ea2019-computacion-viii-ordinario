@@ -7,8 +7,8 @@
   asp-action="New"
 >Registrar nuevo alumno</a>
 
-<table>
-  <thead>
+<table class="table table-bordered table-hover">
+  <thead class="thead-dark">
     <tr>
       <th>Nombre</th>
       <th>Apellidos</th>
@@ -29,7 +29,7 @@
           <a href="/Paciente/Edit/@paciente.Id">Editar</a>
           <a
             asp-controller="Paciente"
-            asp-action="Edit"
+            asp-action="Delete"
             asp-route-id="@paciente.Id"
           >Eliminar</a>
         </td>
